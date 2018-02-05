@@ -1,0 +1,43 @@
+// for big button
+.big-button{
+    background: $purple;
+    color: $off-white;
+    width: 100%;
+    border: none;
+    border-bottom: 0.6rem solid darken($purple, 10%);
+    padding: $m-size;
+    margin-bottom: $l-size;
+    font-size: $xl-size;
+    cursor: pointer;
+}
+//big button disabled
+.big-button:disabled{
+    opacity: 0.6;
+    cursor: default;
+}
+//Normal Button
+.button{
+    border: none;
+    background: $purple;
+    color: $off-white;
+    font-size: $s-size;
+    border-bottom: 0.4rem solid darken($purple,10%);
+    cursor: pointer;
+    padding: $xs-size;
+}
+
+.button--link{
+    border:none;
+    background: none;
+    padding: none 1.2rem;
+    color: rgb(255, 0, 255);
+    font-weight: 1000;
+    font-size: $s-size;
+}
+
+@media (max-width:45rem)
+{
+    .big-button{
+        margin-bottom:$m-size; 
+    }
+}
